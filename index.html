@@ -1,84 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" data-theme="dark">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Linktree Bima Aditiya</title>
-        <!-- css link -->
+        <title>Bima Aditiya Milano | Linktree</title>
+        <meta name="description" content="Koleksi tautan profil, portofolio, toko digital, dan media sosial Bima Aditiya Milano - Front-end Developer." />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/jpeg" href="img/bim2.jpg" />
+
+        <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+        <!-- Font Awesome 6 CDN (reliable & complete) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
-        <!-- bootstrap css -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-        <!-- bootstrap icon css -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-        <!-- font awesome -->
-        <script src="https://kit.fontawesome.com/af5476175e.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <main>
-            <section class="profile">
-                <div class="container">
-                    <div class="row icon-margin">
-                        <div class="col" align="center">
-                            <img class="img-fluid icon mt-5" src="img/bim2.jpg" alt="Image of Bima Aditiya" />
-                        </div>
+        <main class="tree-container">
+            <!-- Top Controls (Share & Theme Toggle) -->
+            <header class="top-bar">
+                <button class="control-btn" id="shareBtn" aria-label="Bagikan Tautan" title="Bagikan Profil">
+                    <i class="bi bi-share-fill"></i>
+                </button>
+                <button class="control-btn" id="themeToggle" aria-label="Ganti Tema Tampilan" title="Ganti Tema">
+                    <i class="bi bi-sun-fill light-icon"></i>
+                    <i class="bi bi-moon-stars-fill dark-icon"></i>
+                </button>
+            </header>
+
+            <!-- Profile Section -->
+            <section class="profile-card">
+                <div class="avatar-container">
+                    <div class="avatar-ring">
+                        <img class="avatar-img" src="img/bim2.jpg" alt="Foto Profil Bima Aditiya Milano" />
                     </div>
+                    <!-- Live Active Status -->
+                    <span class="status-badge" title="Tersedia untuk projek & kolaborasi">
+                        <span class="status-ping"></span>
+                        <span class="status-dot"></span>
+                    </span>
+                </div>
+
+                <div class="profile-info">
+                    <h1 class="profile-name">
+                        Bima Aditiya Milano
+                        <span class="verified-icon" title="Akun Terverifikasi">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </span>
+                    </h1>
+
+                    <div class="badge-role">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Front-end Developer</span>
+                    </div>
+
+                    <p class="profile-bio">
+                        Passionate about crafting clean, modern & responsive digital web experiences.
+                    </p>
                 </div>
             </section>
-            <section class="description">
-                <div class="name">
-                    <h5>Bima Aditiya Milano</h5>
-                </div>
-                <div class="desc">
-                    <p>Front-end Developer</p>
-                </div>
+
+            <!-- Links Section -->
+            <section class="links-section">
+                <!-- BimStore -->
+                <a href="https://bimstore.my.id/" target="_blank" rel="noopener noreferrer" class="link-item item-bimstore">
+                    <div class="link-icon-box">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <div class="link-text">
+                        <div class="link-title-row">
+                            <span class="link-title">BimStore</span>
+                            <span class="link-tag tag-featured">Online Store</span>
+                        </div>
+                        <span class="link-subtitle">bimstore.my.id • Belanja & Layanan Digital</span>
+                    </div>
+                    <div class="link-action">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </a>
+
+                <!-- Portofolio -->
+                <a href="https://bimaaditiya.github.io/Portofolio2/" target="_blank" rel="noopener noreferrer" class="link-item item-portfolio">
+                    <div class="link-icon-box">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="link-text">
+                        <div class="link-title-row">
+                            <span class="link-title">Portofolio Website</span>
+                            <span class="link-tag tag-portfolio">Showcase</span>
+                        </div>
+                        <span class="link-subtitle">bimaaditiya.github.io • Galeri Projek & CV</span>
+                    </div>
+                    <div class="link-action">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/bima-aditiya-a40056241/" target="_blank" rel="noopener noreferrer" class="link-item item-linkedin">
+                    <div class="link-icon-box">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="link-text">
+                        <span class="link-title">LinkedIn</span>
+                        <span class="link-subtitle">Terhubung secara profesional & riwayat kerja</span>
+                    </div>
+                    <div class="link-action">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/Bimaaditiya" target="_blank" rel="noopener noreferrer" class="link-item item-github">
+                    <div class="link-icon-box">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="link-text">
+                        <span class="link-title">GitHub</span>
+                        <span class="link-subtitle">Repositori source code & kontribusi open source</span>
+                    </div>
+                    <div class="link-action">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/_bimaaditiya" target="_blank" rel="noopener noreferrer" class="link-item item-instagram">
+                    <div class="link-icon-box">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="link-text">
+                        <span class="link-title">Instagram</span>
+                        <span class="link-subtitle">@_bimaaditiya • Feed, Story & Galeri Aktivitas</span>
+                    </div>
+                    <div class="link-action">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </a>
+
+                <!-- Twitter / X -->
+                <a href="https://twitter.com/BimaAditiya30" target="_blank" rel="noopener noreferrer" class="link-item item-twitter">
+                    <div class="link-icon-box">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                    <div class="link-text">
+                        <span class="link-title">Twitter / X</span>
+                        <span class="link-subtitle">@BimaAditiya30 • Opini teknologi & update terbaru</span>
+                    </div>
+                    <div class="link-action">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </a>
             </section>
-            <section class="main-content">
-                <div class="row link">
-    <i class="fas fa-store"></i>
-    <a target="_blank" href="https://bimstore.my.id/">
-        <h6>BimStore</h6>
-    </a>
-</div>
-                <div class="row link">
-                    <i class="fas fa-globe"></i>
-                    <a target="_blank" href="https://bimaaditiya.github.io/Portofolio2/">
-                        <h6>Portofolio</h6>
-                    </a>
-                </div>
-                <div class="row link">
-                    <i class="fab fa-linkedin"></i>
-                    <a target="_blank" href="https://www.linkedin.com/in/bima-aditiya-a40056241/">
-                        <h6>LinkedIn</h6>
-                    </a>
-                </div>
-                <div class="row link">
-                    <i class="fab fa-github"></i>
-                    <a target="_blank" href="https://github.com/Bimaaditiya">
-                        <h6>Github</h6>
-                    </a>
-                </div>
-                <div class="row link">
-                    <i class="fab fa-instagram"></i>
-                    <a target="_blank" href="https://instagram.com/_bimaaditiya">
-                        <h6>Instagram</h6>
-                    </a>
-                </div>
-                <div class="row link">
-                    <i class="fab fa-twitter"></i>
-                    <a target="_blank" href="https://twitter.com/BimaAditiya30">
-                        <h6>Twitter</h6>
-                    </a>
-                </div>
-            </section>
-            <footer class="text-black text-center pb-3">
-                <p>
-                    Created with © 2022 Bima Aditiya.<br />
+
+            <!-- Footer -->
+            <footer class="tree-footer">
+                <p class="copyright">
+                    Created with <i class="bi bi-heart-fill heart-beat"></i> by <strong>Bima Aditiya</strong>
+                </p>
+                <span class="footer-year">© 2026 • All rights reserved</span>
             </footer>
         </main>
 
-        <!-- bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <!-- Toast Feedback for Copy/Share -->
+        <div id="toast" class="toast-notification" role="status" aria-live="polite">
+            <i class="bi bi-check-circle-fill"></i>
+            <span id="toastMsg">Tautan berhasil disalin!</span>
+        </div>
+
+        <!-- Script Interactivity -->
+        <script>
+            // Theme Toggle Logic
+            const themeToggle = document.getElementById('themeToggle');
+            const htmlElement = document.documentElement;
+
+            // Load saved theme or default to dark
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            htmlElement.setAttribute('data-theme', savedTheme);
+
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = htmlElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                htmlElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                showToast(newTheme === 'dark' ? 'Mode Gelap diaktifkan' : 'Mode Terang diaktifkan');
+            });
+
+            // Share / Copy Link Functionality
+            const shareBtn = document.getElementById('shareBtn');
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            let toastTimer;
+
+            shareBtn.addEventListener('click', async () => {
+                const shareData = {
+                    title: 'Bima Aditiya Milano | Linktree',
+                    text: 'Kunjungi tautan profil & portofolio Bima Aditiya Milano',
+                    url: window.location.href
+                };
+
+                if (navigator.share && navigator.canShare && navigator.canShare(shareData)) {
+                    try {
+                        await navigator.share(shareData);
+                        return;
+                    } catch (err) {
+                        // fallback to clipboard if cancelled or failed
+                    }
+                }
+
+                // Copy to clipboard fallback
+                navigator.clipboard.writeText(window.location.href)
+                    .then(() => {
+                        showToast('Tautan profil berhasil disalin ke clipboard!');
+                    })
+                    .catch(() => {
+                        // Alternative copy method
+                        const input = document.createElement('input');
+                        input.value = window.location.href;
+                        document.body.appendChild(input);
+                        input.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(input);
+                        showToast('Tautan profil berhasil disalin!');
+                    });
+            });
+
+            function showToast(message) {
+                toastMsg.textContent = message;
+                toast.classList.add('show');
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 2800);
+            }
+        </script>
     </body>
 </html>
